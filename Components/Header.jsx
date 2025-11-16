@@ -25,6 +25,8 @@ const Header = () => {
         <Link href="#home" className='text-gray-200 hover:text-[#087ef5] text-md font-medium transition-all duration-300  hover:scale-110'>Home</Link>
         <Link href="#about" className='text-gray-200 text-md font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-110'>About</Link>
         <Link href="#Skills" className='text-gray-200 text-md font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-110'>Skills</Link>
+         <Link href="#Services" className='text-gray-200 text-md font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-110'>Services</Link>
+
         <Link href="#Projects" className='text-gray-200 text-md font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-110'>Projects</Link>
         <Link href="#Contact" className='text-gray-200 text-md font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-110 mr-5'>Contact</Link>
       </div>
@@ -54,6 +56,7 @@ const Header = () => {
           <Link  href="#home" onClick={CloseNavBar} className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-105'>Home</Link>
           <Link href="#about" onClick={CloseNavBar} className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-105'>About</Link>
           <Link href="#Skills" onClick={CloseNavBar} className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-105'>Skills</Link>
+          <Link href="#Services" onClick={CloseNavBar} className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-105'>Services</Link>          
           <Link href="#Projects" onClick={CloseNavBar} className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-105'>Projects</Link>
           <Link href="#Contact" onClick={CloseNavBar} className='text-gray-200 text-lg font-medium transition-all duration-300 hover:text-[#087ef5] hover:scale-105'>Contact</Link>
         </div>
