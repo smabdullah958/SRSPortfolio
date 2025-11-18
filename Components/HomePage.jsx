@@ -16,7 +16,7 @@ const HomePage = () => {
       <div className="flex flex-col justify-center   md:pl-10 lg:pl-20 ">
    <p className="text-xl sm:text-3xl md:text-5xl text-gray-100 font-bold md:text-left text-center pt-5 md:pt-0">I am <span className="text-blue-300">Syed Rahim Shah </span></p>
    <p className="mt-1 sm:mt-3 text-lg sm:text-xl md:text-2xl text-gray-100 font-bold md:text-left text-center ">
-    I am{" "} 
+    I am {" "} 
     <ReactTyped
     className="text-blue-300"
      strings={Role}
