@@ -10,7 +10,7 @@ const OurVision = () => {
 
             <Image src="/Mission.png" alt="mission" width={500} height={500} lazy="loading" className='rounded-2xl order-2 md:order-1 mt-5 md:mt-0 ' />
       
-        <h1 className='text-sm sm:text-xl lg:text-2xl font-bold  md:ml-10  justify-start text-justify order-1 md:order-2'>create value,share Knowledge and empower business and learners through the power of technology</h1>
+        <h1 className='text-sm sm:text-xl lg:text-2xl font-bold  md:ml-10  justify-start text-justify order-1 md:order-2'>create value,share Knowledge and empower businesses and learners through the power of technology</h1>
 
         
     </div>
