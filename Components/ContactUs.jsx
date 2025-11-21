@@ -18,7 +18,7 @@ let [Submitting,SetSubmitting]=useState(null);
 console.log(Data)
 })
 
-let HandleClick=async(e)=>{
+let HandleClick=async()=>{
 
   if(!Data.UserName || !Data.Email || !Data.Subject || !Data.Message){
     SetSubmitting(true)

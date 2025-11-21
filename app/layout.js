@@ -1,4 +1,5 @@
 import Header from "@/Components/Header";
+import Footer from "@/Components/footer";
 import "./globals.css";
 export const metadata = {
   title: "SRS Portfolio",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -199,8 +199,9 @@ const Skills = () => {
             <button
               onClick={prevSlide}
               className='absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-6 z-10 
-                         bg-gray-700 hover:bg-cyan-600 text-white px-3 py-3 rounded-full shadow-xl transition-all duration-300
-                         opacity-100 md:opacity-0 md:group-hover:opacity-100'
+                         bg-gray-700 hover:bg-cyan-600 text-white px-3 py-3 rounded-full 
+                         shadow-xl transition-all duration-300
+                         opacity-100  '
             >
               ◀
             </button>
@@ -212,7 +213,7 @@ const Skills = () => {
               onClick={nextSlide}
               className='absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-6 z-10 
                          bg-gray-700 hover:bg-cyan-600 text-white px-3 py-3 rounded-full shadow-xl transition-all duration-300
-                         opacity-100 md:opacity-0 md:group-hover:opacity-100'
+                         opacity-100 '
             >
               ▶
             </button>

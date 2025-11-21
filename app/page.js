@@ -7,7 +7,7 @@ import ContactUs from "@/Components/ContactUs";
 import OurVision from "@/Components/OurVision";
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-900">
     <HomePage/>
    <About/>
    <OurVision/>
