@@ -19,7 +19,7 @@ const Header = () => {
       {/* Desktop Navbar */}
       <div className='hidden 2xl:h-40 md:flex md:items-center md:justify-between md:bg-[#292727] md:w-full md:px-5 md:py-3 md:shadow-md md:fixed md:top-0 z-50 h-20'>
 
-         <h1 className="text-white font-bold text-xl ">SRS</h1>
+         <h1 className="text-white font-bold text-xl ">S<span className="text-4xl">R</span>S</h1>
 
       <div className='flex gap-x-10 justify-end bg-[#2d2d2d] items-center '>
         <Link href="#home" className='text-gray-200 hover:text-[#087ef5] text-md font-medium transition-all duration-300  hover:scale-110'>Home</Link>
@@ -36,7 +36,7 @@ const Header = () => {
       {/* Mobile Navbar */}
       <div className='md:hidden flex items-center justify-between  bg-[#2d2d2d] w-full px-5 py-3 shadow-md fixed top-0 z-50 h-20'>
         {/* Logo (optional) */}
-        <h1 className="text-white font-bold text-xl">SRS</h1>
+        <h1 className="text-white font-bold text-xl">S<span className="text-4xl">R</span>S</h1>
 
         {/* Burger button */}
         {/* if show false than display the burger button if a show is true than a display teh burger button  */}

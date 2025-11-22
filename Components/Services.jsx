@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+import Aos from "aos"
+import React, { useEffect } from "react";
 import { FaCode, FaShoppingCart, FaPenNib, FaChalkboardTeacher, FaTools } from "react-icons/fa";
 
 const Services = () => {
@@ -22,14 +24,18 @@ const Services = () => {
 
   ];
 
+  useEffect(()=>{
+    Aos.init({ duration: 500 });
+  },[])
+
   return (
     <div
       id="Services"
       className="w-full h-full 2xl:py-16 bg-gray-900 sm:px-16 px-10 text-[#ece3e3] text-xl"
     >
-      <h1 className="text-3xl font-bold pt-5 sm:pt-10 pb-10 text-center">What I Offer</h1>
+      <h1 data-aos="fade-down" className="text-3xl font-bold pt-5 sm:pt-10 pb-10 text-center">What I Offer</h1>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 pb-3">
+      <div data-aos="fade-left" className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 pb-3">
         {services.map((service, index) => (
           <div
             key={index}
