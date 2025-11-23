@@ -24,8 +24,8 @@ useEffect(()=>{
       
         <h1 
         data-aos="fade-left"
-        className=' sm:p-10 text-justify text-sm sm:text-md md:text-xl col-span-1 md:col-span-2 md:text-[16px] flex-col justify-center items-center content-center order-1 md:order-2'>
-        create value,share Knowledge and empower businesses and learners through the power of technology</h1>
+        className=' sm:p-10 text-justify text-sm  sm:text-md md:text-lg col-span-1 md:col-span-2  flex-col justify-center items-center content-center order-1 md:order-2'>
+        Create value,share Knowledge and empower businesses and learners through the power of technology</h1>
 
         
     </div>

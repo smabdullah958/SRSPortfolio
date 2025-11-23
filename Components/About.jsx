@@ -12,7 +12,8 @@ let Aboutpage = () => {
     <div id="about"
      className='w-full h-full 2xl:py-14 bg-gray-900 sm:px-16 px-10   md:pt-0 text-[#ece3e3] text-xl ' >
      <div>
-     <h1 data-aos="fade-down" className='text-3xl font-bold pt-5 sm:pt-10 pb-5 text-center'>About Me</h1>
+     <h1 data-aos="fade-down" className='text-3xl font-bold pt-5 sm:pt-10 pb-5 text-center'>
+      About Me</h1>
        <div data-aos="fade-up" className='flex flex-col md:grid md:grid-cols-3 gap-12'>
         <div className="text-justify text-sm sm:text-md md:text-xl md:col-span-2 md:text-[16px] flex-col justify-center items-center content-center order-2 md:order-1">
     I’m an <span className='text-blue-400'>IT professional</span> with <span className='text-blue-400'>30 years of experience</span> Strong background in software engineering, training, content creation, and e-commerce. With decades of hands-on industry experience, I’ve worked across modern and legacy technologies while guiding students and professionals toward real-world computer science skills.

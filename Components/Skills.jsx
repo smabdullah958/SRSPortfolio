@@ -1,9 +1,5 @@
-
 "use client";
-import Aos from "aos";
-import { useEffect } from "react";
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaJs, FaPython, FaJava, FaAws, FaReact, FaVuejs, FaNodeJs, FaHtml5, FaCss3Alt,
   FaBootstrap, FaDatabase, FaServer, FaCogs, FaFire, FaTerminal
@@ -13,11 +9,6 @@ import {
 } from "react-icons/si";
 
 const Skills = () => {
-
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
   const modernSkills = [
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
     { name: "Python", icon: <FaPython className="text-blue-500" /> },
@@ -52,18 +43,22 @@ const Skills = () => {
   const [slide, setSlide] = useState(0);
   const [direction, setDirection] = useState("next");
 
+  // Auto-play functionality - changes slide every 3 seconds
+  useEffect(() => {
+    const autoPlay = setInterval(() => {
+      setDirection("next");
+      setSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(autoPlay); // Cleanup on unmount
+  }, [totalSlides]);
+
   const changeSlide = (index) => {
     setDirection(index > slide ? "next" : "prev");
     setSlide(index);
   };
 
-  const SkillCard = ({ name, icon }) => (
-    <div className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-      <div className="text-5xl mb-2">{icon}</div>
-      <p className="text-lg font-medium">{name}</p>
-    </div>
-  );
-
+  
   return (
     <div id="Skills" className="bg-gray-900 text-white py-12">
       <style>
@@ -82,14 +77,13 @@ const Skills = () => {
       </style>
 
       <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 data-aos="fade-down" className="text-4xl font-extrabold text-center mb-12 pb-2">Expertise</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-12 pb-2">Expertise</h2>
 
         {/* Modern Stack */}
-        <h3 data-aos="fade-down" className="text-2xl font-bold mb-6 text-cyan-400">🚀 Modern Stack</h3>
+        <h3 className="text-2xl font-bold mb-6 text-cyan-400">🚀 Modern Stack</h3>
 
         {/* SKILLS SLIDER */}
-        <div className="relative" data-aos="fade-down">
-
+        <div className="relative">
           <div
             key={slide}
             className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 
@@ -98,28 +92,34 @@ const Skills = () => {
             {modernSkills
               .slice(slide * itemsPerSlide, slide * itemsPerSlide + itemsPerSlide)
               .map((skill, index) => (
-                <SkillCard key={index} name={skill.name} icon={skill.icon} />
+              <div key={index} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+             <div className="text-5xl mb-2">{skill.icon}</div>
+     <p className="text-lg font-medium">{skill.name}</p>
+              </div>
               ))}
           </div>
 
-           {/* DOTS NAVIGATION */}
+          {/* DOTS NAVIGATION */}
           <div className="flex justify-center gap-3 mt-6">
             {Array.from({ length: totalSlides }).map((_, index) => (
-              < button
+              <button
                 key={index}
                 onClick={() => changeSlide(index)}
                 className={`size-2 xl:size-3 rounded-full transition-all 
                   ${slide === index ? "bg-cyan-400 scale-110" : "bg-gray-600 hover:bg-gray-400"}`}
               />
             ))}
-          </div> 
+          </div>
         </div>
 
         {/* Legacy Section */}
-        <h3 className="text-2xl font-bold mt-12 mb-6 text-red-400 " data-aos="fade-up">💾 Legacy Skills</h3>
-        <div data-aos="fade-down" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <h3 className="text-2xl font-bold mt-12 mb-6 text-red-400">💾 Legacy Skills</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
           {legacySkills.map((skill, index) => (
-            <SkillCard key={index} name={skill.name} icon={skill.icon} />
+              <div key={index} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+             <div className="text-5xl mb-2">{skill.icon}</div>
+     <p className="text-lg font-medium">{skill.name}</p>
+  </div>
           ))}
         </div>
       </div>
