@@ -12,21 +12,41 @@ const Project = () => {
 
   let project = [
     {
-      name: "Project 1",
-      image: "/pro1.png",
-      description:"A modern and full stack webapplication"
+      name: "Inventry and Stock Control",
+      image: "/InventryAndStockControl.png",
+    description: "A powerful full-stack system designed to manage stock levels, track products, and streamline inventory operations with real-time insights."
+
     },
     {
-      name: "Project 2",
-      image: "/pro2.jpg",
-      description:"A modern and full  webapplication"
+      name: "Library Management System",
+      image: "/Library.jpg",
+    description: "A modern digital library platform enabling efficient book tracking, member management, and automated borrowing & returning processes."
+
     },
     {
-      name: "Project 3",
-      image: "/pro3.png",
-      description:"A modern and full stack web"
+      name: "School Management System",
+      image: "/SchoolManagementSystem.png",
+    description: "A complete school administration solution that manages students, staff, attendance, exams, and reports through a clean, user-friendly interface."
+
     },
-  ];
+    {
+      name: "Pharmacy Management System",
+      image: "/PharmacyManagementSystem.png",
+     description: "A professional pharmacy workflow system that handles medicine inventory, prescriptions, batch tracking, and billing with accuracy and speed."
+    },
+    {
+      name: "PayRoll System",
+      image: "/PayRollSystem.png",
+    description: "A secure and automated payroll platform designed to process salaries, manage deductions, generate slips, and ensure financial compliance."
+    },{
+      name: "Retail POS System",
+      image: "/Retail POS.png",
+    description: "A fast and intuitive point-of-sale system for retail businesses, featuring real-time billing, sales analytics, and product tracking."
+    },{
+      name: "Data Migration System",
+      image: "/DataMigration.jpg",
+    description: "A reliable data migration tool that securely transfers records between systems with validation, cleanup, and performance optimization."
+    }];
 
   return (
     <div id="Projects" className="bg-gray-900 text-white  px-6">

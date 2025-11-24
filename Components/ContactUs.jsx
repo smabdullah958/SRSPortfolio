@@ -12,7 +12,7 @@ const ContactUs = () => {
   let [Submitting,SetSubmitting]=useState(null);
   const [result, setResult] =useState("");
   let [Data,SetData]=useState({
-    access_key:"881b5b74-2a53-4d04-b485-2284ecf313ed",
+    access_key:"59238793-4617-48f4-90d3-73d6cc9623df",
     UserName:"",
     Email:"",
     Subject:"", 
@@ -91,12 +91,12 @@ else{
 
             <p className='flex items-center gap-3 mb-2'>
               <FaPhone className='text-blue-400' /> 
-              +92 31234556
+              03044414674
             </p>
 
             <p className='flex items-center gap-3 mb-2'>
               <FaEnvelope className='text-blue-400' />
-              srs@gmail.com
+              srs091@gmail.com
             </p>
 
             <p className='flex items-center gap-3 mb-2'>

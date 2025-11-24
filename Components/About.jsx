@@ -20,7 +20,7 @@ let Aboutpage = () => {
 </div>
 <div className="flex justify-center pt-5 order-1 md:order-2">
           <Image
-            src="/me (2).jpeg"
+            src="/me.jpg"
             alt="My Image"
             width={200}
             height={200}

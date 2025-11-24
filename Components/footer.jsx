@@ -1,17 +1,17 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   let IconsObject = [
     {
       icon: <FaLinkedinIn />,
-      link: "https://smabdullah.netlify.app/",
+      link: "https://www.linkedin.com/in/srahims",
     },
     {
-      icon: <FaGithub />,
-      link: "https://smabdullah.netlify.app/",
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/srahimshah",
     },
   ];
 
