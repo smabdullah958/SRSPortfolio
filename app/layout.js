@@ -5,7 +5,7 @@ export const metadata = {
   title: "SRS Portfolio",
   description: "My Portfolio",
   icons: {
-    icon: "me (2).jpeg",
+    icon: "me.jpeg",
   },
 
 };

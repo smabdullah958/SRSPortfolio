@@ -8,6 +8,8 @@ import {
   SiPhp, SiMysql, SiPostgresql, SiMongodb, SiExpress, SiTailwindcss, SiCpanel
 } from "react-icons/si";
 
+import Aos from "aos"
+
 const Skills = () => {
   const modernSkills = [
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
@@ -77,22 +79,22 @@ const Skills = () => {
       </style>
 
       <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-center mb-12 pb-2">Expertise</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-12 pb-2" data-aos="fade-down">Expertise</h2>
 
         {/* Modern Stack */}
-        <h3 className="text-2xl font-bold mb-6 text-cyan-400">🚀 Modern Stack</h3>
+        <h3 className="text-2xl font-bold mb-6 text-cyan-400" data-aos="fade-left">🚀 Modern Stack</h3>
 
         {/* SKILLS SLIDER */}
         <div className="relative">
           <div
-            key={slide}
+            key={slide} 
             className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 
-              ${direction === "next" ? "animate-slide-right" : "animate-slide-left"}`}
+              ${direction === "next" ? "animate-slide-right" : "animate-slide-left"}`}  
           >
             {modernSkills
               .slice(slide * itemsPerSlide, slide * itemsPerSlide + itemsPerSlide)
               .map((skill, index) => (
-              <div key={index} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+              <div key={index} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300" data-aos="fade-left">
              <div className="text-5xl mb-2">{skill.icon}</div>
      <p className="text-lg font-medium">{skill.name}</p>
               </div>
@@ -113,8 +115,8 @@ const Skills = () => {
         </div>
 
         {/* Legacy Section */}
-        <h3 className="text-2xl font-bold mt-12 mb-6 text-red-400">💾 Legacy Skills</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <h3 className="text-2xl font-bold mt-12 mb-6 text-red-400" data-aos="fade-right">💾 Legacy Skills</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6" data-aos="fade-left">
           {legacySkills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
              <div className="text-5xl mb-2">{skill.icon}</div>

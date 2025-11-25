@@ -20,7 +20,7 @@ const HomePage = () => {
        data-aos="fade-right"
       className="flex justify-center pt-5">
 
-      <Image src="/me.jpg" alt="me" loading="lazy"  width={300} height={300} className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all hover:duration-1000 aos-init aos-animate "/>
+      <Image src="/me.jpeg" alt="me" loading="lazy"  width={300} height={300} className="rounded-full shadow-lg border-4 border-gray-700 hover:scale-105 transition-all hover:duration-1000 aos-init aos-animate "/>
       
       </div>
       <div
@@ -39,13 +39,10 @@ const HomePage = () => {
     </p>
     <p  className="text-gray-400 my-3 text-sm sm:text-md  sm:mx-10 md:mx-0">With 30+ years of experience in software development, computer science education, and digital solutions</p>
 
-<div className="flex gap-10 mb-5 mt-5 md:mt-0 justify-center md:justify-start">
 
-<Link href="#Contact" className="bg-blue-500 text-white px-4 py-3 rounded-xl hover:bg-blue-600 transition-all duration-300 md:mt-10 ">Contact Me</Link>
+<Link href="#Contact" className="bg-blue-500 text-white px-4 py-3 rounded-xl hover:bg-blue-600 transition-all duration-300 mt-3 sm:mt-5 w-28 text-center  ">Hire Me</Link>
 
-<button className="bg-gray-800 text-white px-4 py-3 rounded-xl hover:bg-gray-600 transition-all duration-300 md:mt-10 w-24">CV</button>
 
-</div>
 
    <div></div>
 
