@@ -61,20 +61,20 @@ else{
   return (
     <div  id="Contact" className='bg-gray-900'>
     <h1 data-aos="fade-down" className='text-3xl font-bold pt-5 pb-8 sm:pt-10  text-center text-gray-50'>Contact Us</h1>
-    <div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-2 items-center justify-between  2xl:py-14  sm:px-16 px-10   md:pt-0 text-[#ece3e3] text-xl '>
-        <form onSubmit={(e)=>e.preventDefault()} className='order-1 md:order-2  md:mt-5 '>
+    <div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-2 items-center justify-center  2xl:py-14  sm:px-16 px-10   md:pt-0 text-[#ece3e3] text-xl '>
+        <form onSubmit={(e)=>e.preventDefault()} className='order-1 md:order-2  md:mt-5 grid gap-4 md:mx-10 xl:mx-20'>
    {Submitting && <span className='text-red-500 '>{result}</span>}
-          <input type='text' name='UserName' value={Data.UserName} onChange={HandleValues} required placeholder='UserName' className='w-full lg:w-96 p-2 border border-gray-300 rounded-md mb-3'  />
+          <input type='text' name='UserName' value={Data.UserName} onChange={HandleValues} required placeholder='UserName' className='w-full lg:w-[30vw] p-2 border border-gray-300 rounded-md mb-3'  />
           
           <input type="email" name='Email' value={Data.Email} onChange={HandleValues} required 
-          placeholder='Email' className='w-full lg:w-96 p-2 border border-gray-300 rounded-md mb-3'/>  
+          placeholder='Email' className='w-full lg:w-[30vw] p-2 border border-gray-300 rounded-md mb-3'/>  
           
     
-          <input type="text" name='Subject' value={Data.Subject} onChange={HandleValues} required placeholder='Subject' className='w-full lg:w-96 p-2 border border-gray-300 rounded-md mb-3'/>
+          <input type="text" name='Subject' value={Data.Subject} onChange={HandleValues} required placeholder='Subject' className='w-full lg:w-[30vw] p-2 border border-gray-300 rounded-md mb-3'/>
 
           <textarea cols={40} rows={40} name='Message' value={Data.Message} required 
-          onChange={HandleValues} placeholder='Message' className='mb-3 w-full lg:w-96 p-2 border border-gray-300 rounded-md h-32'/>  
-          <button disabled={Submitting===false}  className={`w-full lg:w-96   p-2 bg-[#007bff] hover:bg-[#0056b3] text-white rounded-md mb-5 transition duration-300 ease-in-out ${Submitting===false ? "opacity-20 cursor-not-allowed" : ""}`}
+          onChange={HandleValues} placeholder='Message' className='mb-3 w-full lg:w-[30vw] p-2 border border-gray-300 rounded-md h-32'/>  
+          <button disabled={Submitting===false}  className={`w-full lg:w-[30vw]   p-2 bg-[#007bff] hover:bg-[#0056b3] text-white rounded-md mb-5 transition duration-300 ease-in-out ${Submitting===false ? "opacity-20 cursor-not-allowed" : ""}`}
            onClick={HandleClick}>{Submitting===false ? "Sending..." :"Send Message"}</button>
         </form>
         {/* Contact Info Section */}
