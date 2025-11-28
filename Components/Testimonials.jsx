@@ -39,7 +39,7 @@ const Testimonials = () => {
         Testimonials
       </h1>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
+      <div className="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
         {data.map((item, index) => (
           <div
             key={index}
