@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className='hidden md:flex md:items-center md:justify-between md:bg-[#292727] md:w-full md:px-5 md:py-3 md:shadow-md md:fixed md:top-0 z-50 h-20'>
+      <div className='hidden md:flex md:items-center md:justify-between md:bg-[#2d2d2d] md:w-full md:px-5 md:py-3 md:shadow-md md:fixed md:top-0 z-50 h-20'>
 
          <h1 className="text-white font-bold text-xl ">S<span className="text-4xl">R</span>S</h1>
 
