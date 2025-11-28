@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 export default function Home() {
   
   return (
-    <div className="bg-gray-900 overflow-hidden">
+    <div className="bg-gray-900 overflow-hidden ">
     <HomePage/>
    <About/>
    <OurVision/>
